@@ -10,9 +10,6 @@ AWS.config.update({
     region: process.env['region']
 });
 
-
-
-
 const uploadDir = function(s3Path, bucketName) {
 
     let s3 = new AWS.S3();
@@ -44,5 +41,5 @@ const uploadDir = function(s3Path, bucketName) {
     });
 };
 
-// uploadDir('upload directory', "BUCKET_NAME");
-uploadDir('/Users/obaydaba/Desktop/test s3', "obay/react");
+uploadDir('upload directory', "BUCKET_NAME");
+// uploadDir('/Users/obaydaba/Desktop/test s3', "obay/react");
